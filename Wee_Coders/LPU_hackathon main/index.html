@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="main-content">
+    <section class="container edit" id="edit">
+        <form method="get">
+            <label for="fname">Full name :</label>
+            <input type="text" id="fname" name="fname" placeholder="Full Name"><br>
+
+            <label for="post">Designation :</label>
+            <input type="text" name="post" id="post" placeholder="designation"><br>
+
+            <label for="Description">Description :</label>
+            <textarea id="Description" name="Description" placeholder="Describe yourself in some words..."
+                style="height:200px"></textarea> <br>
+
+            <label for="email">Email :</label>
+            <input type="text" name="email" id="email"><br>
+
+            <label for="mob">Mobile Number :</label>
+            <input type="text" id="mob" name="mob"><br>
+
+            <label for="ed">Education :</label>
+            <input type="text" id="ed" name="ed"><br>
+
+            <label for="lang">Languages :</label>
+            <input type="text" id="lang" name="lang"><br>
+
+            <label for="imgField">profile picture :</label>
+            <input type="file" id="imgField" name="imgField"><br><br>
+
+            <label for="country">Country :</label>
+            <select id="country" name="country">
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Anguilla">Anguilla</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Bouvet Island">Bouvet Island</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cote D'ivoire">Cote D'ivoire</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="French Guiana">French Guiana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="French Southern Territories">French Southern Territories</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Greece">Greece</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guadeloupe">Guadeloupe</option>
+                <option value="Guam">Guam</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guernsey">Guernsey</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-bissau">Guinea-bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong">Hong Kong</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Isle of Man">Isle of Man</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jersey">Jersey</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                <option value="Korea, Republic of">Korea, Republic of</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macao">Macao</option>
+                <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of
+                </option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mayotte">Mayotte</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                <option value="Moldova, Republic of">Moldova, Republic of</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Netherlands Antilles">Netherlands Antilles</option>
+                <option value="New Caledonia">New Caledonia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Pitcairn">Pitcairn</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Reunion">Reunion</option>
+                <option value="Romania">Romania</option>
+                <option value="Russian Federation">Russian Federation</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint Helena">Saint Helena</option>
+                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich
+                    Islands</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Timor-leste">Timor-leste</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau">Tokelau</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Viet Nam">Viet Nam</option>
+                <option value="Virgin Islands, British">Virgin Islands, British</option>
+                <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                <option value="Western Sahara">Western Sahara</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select><br>
+
+
+
+
+
+
+            <button type="button" onclick="generateCV()" class="control active-btn" data-id="home"> <a href=" #">
+                    Submit</a></button>
+        </form>
+
+    </section>
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/profile.png" alt="" id="imgTemplate">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span id="nm">Lakshman Singh.</span>
+                    <h1> ( <span id="pst" class="auto"> Web Developer </span> ) </h1>
+                </h1>
+                <p id="description1">
+                    I'm a Full Stack Developer, I love to create beautiful and functional websites.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, libero?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis sed aut!
+                </p>
+                <div class="btn-con">
+                    <a href="" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eveniet labore nihil obcaecati consequatur. Debitis error doloremque,
+                        vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
+                        delectus dolore fugiat exercitationem a,
+                        ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Harum non necessitatibus deleniti eum soluta.
+                    </p>
+                    <div class="btn-con">
+                        <a href="#" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">650+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">10+</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">300+</p>
+                            <p class="small-text">Happy <br /> Clients</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">400+</p>
+                            <p class="small-text">Customer <br /> reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">ReactJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">NodeJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">87%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2010 - present</p>
+                    <h5>Web Developer<span> - Vircrosoft</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2008 - 2011</p>
+                    <h5>Software Engineer<span> - Boogle, Inc.</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2016 - 2017</p>
+                    <h5>C++ Programmer<span> - Slime Tech</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2009 - 2013</p>
+                    <h5>Business Degree<span> - Sussex University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2013 - 2016</p>
+                    <h5>Computer Science Degree<span> - Brookes University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2017 - present</p>
+                    <h5>3d Animation<span> - Brighton University</span></h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port1.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port4.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port7.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/port6.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Create Your Own Website
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                How to Become an Expert in Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog2.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Become a Web Designer in 10 Days
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/blog3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Debbuging made easy with Web Inspector
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port1.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                Get started with Web Design and UI Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/port3.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>
+                                This is what you need to know about Web Design
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Doloribus natus voluptas, eos obcaecati recusandae amet?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p id="country1" style="text-transform: uppercase;">
+                                    : London, united Kingdom
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span id="email1">: maclinzuniversal@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span id="ed1">: Sussex University, East Sussex</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p>
+                                    <span id="mob1">: 07522670617</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span id="lang1">: Afrikaans, English, Spanish</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://cfviz.netlify.app/" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="YOUR NAME">
+                                <input type="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="submit-btn">
+                                <a href="#" class="main-btn">
+                                    <span class="btn-text">Download CV</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+                            </div>
+                        </form><br>
+                        <!-- map -->
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.163742937!2d76.81306771991275!3d28.647279935262464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1639489002410!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+        </section>
+        </div>
+        </div>
+        </section>
+    </main>
+
+    <div class="controls"><br><br><br>
+        <div class="control" data-id="edit">
+            <i class="fas fa-edit"></i>
+        </div>
+        <div class="control active-btn" data-id="home">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto", {
+            strings: ["Web Developer", "ML Enthusiast"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
