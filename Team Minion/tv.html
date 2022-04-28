@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="app.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+</head>
+<body>
+
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            <img src="https://fchat.s3.ap-south-1.amazonaws.com/default/VWrFtztmnh.1651114974495.png" height="60px" alt="">
+        </div>
+        <div class="nav-items">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="test.html">Movies</a></li>
+           <li><a href="tv.html">TV Shows</a></li>
+           <li><a href="books.html">Books</a></li>
+           <li><a href="#">Music</a></li>
+           <li><a href="games.html">Games</a></li>
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <form id="form">
+           <input type="search" class="search-data" id="search" placeholder="Search" required>
+           <button type="submit" class="fas fa-search"></button>
+        </form>
+     </nav>
+  
+
+     <div class="header">
+            <h1>FIND BEST TV SHOWS SUGGESTIONS</h1>
+    </div>
+
+    <h1 class="trending">TRENDING SHOWS</h1>
+
+    </section>
+    <main id="main" class="main">
+        <div class="mm">
+    
+        </div>
+    
+          </main>
+    <script>
+
+
+
+const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+    
+    const API_KEY = 'https://api.themoviedb.org/3/movie/550?api_key=21958744bdcd83994642863edf06f583';
+
+const key_aapi = 'api_key=21958744bdcd83994642863edf06f583';
+
+const IMG_URL = 'https://image.tmdb.org/t/p/original'
+
+
+const b_base_url = 'https://api.themoviedb.org/3'
+
+const BASE_URL ='https://api.themoviedb.org/3/tv/popular?api_key=21958744bdcd83994642863edf06f583';
+
+const BASE_TV = 'https://api.themoviedb.org/3/tv/popular?api_key=21958744bdcd83994642863edf06f583'
+
+const searchURL = b_base_url + '/search/tv?' + key_aapi;
+
+const main = document.getElementById('main');
+
+// const form = document.getElementById('form');
+
+const search = document.getElementById('search');
+
+getMovies(BASE_URL);
+
+
+function getMovies(url){
+    fetch(url).then(res => res.json()).then(data =>{
+        console.log(data);
+
+        showMovies(data.results);
+
+
+    })
+}
+
+
+
+function showMovies(data){
+
+    main.innerHTML = '';
+
+    data.forEach(movie => {
+        const {original_name, poster_path ,vote_average, overview} = movie;
+        const movieEL =document.createElement('div');
+        movieEL.classList.add('movie');
+        movieEL.innerHTML = `
+                 <img src="${IMG_URL+poster_path}" alt="${original_name}" >
+                   <div class="movie-info">
+                       <h3>${original_name}</h3> 
+                       <span class="color">${vote_average}</span>
+                   </div>
+                   <div class="overview">
+                   <h3>overview</h3>
+              ${overview}
+               </div>`
+
+               main.appendChild(movieEL);
+    })}
+
+    
+
+    form.addEventListener('submit',(e) =>{
+        e.preventDefault();
+
+        const searchTerm = search.value;
+
+        if(searchTerm){
+            getMovies(searchURL+'&query='+searchTerm)
+        }
+    })
+
+
+
+    </script>
+
+</body>
+</html>

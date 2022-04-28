@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form-style.css">
+    <script src="https://kit.fontawesome.com/197ea12e84.js" crossorigin="anonymous"></script>
+    <title> Contact Form </title>
+</head>
+<body>
+ 
+    <header class="header">
+        <nav class="navbar">
+            <nav class="container flex-box">
+                <p class="title"> <a href="https://www.linkedin.com/in/sampad-adhikary-b09051196/"> Sampad Adhikary </a> </p>
+                <ul class="nav-items flex-box">
+                    <li class="nav-item item-1"> <a href="#social-media"> Let's Connect </a> </li>
+                </ul>
+            </nav>
+            <a href="./index.html"> <img src="./image/logo.png" alt="logo" class="logo"> </a>
+        </nav>
+    </header>
+
+    <section class="showcase">
+        <h1> Fill out the form below and we will reach you soon. </h1>
+        <form class="form container2" action="./php/insert.php" method="POST">
+            <label for="username"> Name: </label> <br>
+            <input class="text-box" type="text" id="username" name="username" placeholder="Type your username" required> <br>
+
+            <label for="email"> Email: </label> <br>
+            <input class="text-box" type="email" id="email" name="email" placeholder="Type your email" required> <br>
+
+            <p> Describe your need below: </p>
+            <textarea name="describe" id="describe" cols="103" rows="15" placeholder="Type here" required></textarea>
+
+            <p> For more info compress your file and drop below <br> Select your file: </p>
+            <input class="text-box-1" type="file" name="" id=""> <br>
+
+            <input class="btn" type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-elements flex-box">
+            <div class="s-media flex-box" id="social-media">
+                <a href="https://www.linkedin.com/in/sampad-adhikary-b09051196/" target="_blank"> <i class="fa-brands fa-linkedin-in fa-2xl"></i> </a>
+                <a href="https://www.instagram.com/design24x7studio/" target="_blank"> <i class="fa-brands fa-instagram fa-2xl"></i> </a>
+                <a href="" target="_blank"> <i class="fa-brands fa-facebook fa-2xl"></i> </a>
+                <a href=""> <i class="fa-brands fa-twitter fa-2xl" target="_blank"></i> </a>
+            </div>
+            <p class="footer-text"> Sampad Adhikary | &copy | All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+</html>

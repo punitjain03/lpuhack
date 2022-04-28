@@ -1,0 +1,351 @@
+@import url(./ul-classes.css);
+
+/* ----------------------------- Navbar ----------------------------- */
+
+.logo {
+    height: 13rem;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    top: 5rem;
+    left: 65.5rem;
+}
+
+.navbar {
+    padding: 7rem 3rem 6rem;
+    position: relative;
+}
+
+.nav-item, .title {
+    font-weight: 600;
+    font-size: 1.9rem;
+    color: var(--text-light);
+}
+
+.nav-item a,
+.navbar p a{
+    color: var(--text-light);
+}
+
+.nav-item a:hover,
+.navbar p a:hover {
+    color: var(--white);
+}
+
+/* ----------------------------- Showcase ----------------------------- */
+
+.showcase {
+    height: 95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../image/dark.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.text-wrapper {
+    padding-top: 4rem;
+}
+
+.sc-text1 {
+    color: var(--white);
+    font-family: 'Gretaros Regular';
+    font-size: 3.5rem;
+}
+
+.sc-text2 {
+    color: var(--text-light);
+    font-size: 1.8rem;
+    padding-top: 2rem;
+}
+
+.btn {
+    padding: 1.3rem 2.8rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    border: none;
+    margin-top: 2rem;
+}
+
+.btn a {
+    color: var(--bg-dark);
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: var(--text-light);
+}
+
+/* ----------------------------- About ME ----------------------------- */
+
+.about-me {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.abt-text,
+.abt-photo {
+    margin: 0;
+    width: 49%;
+    height: auto;
+    background-color: var(--text-light);
+}
+
+.abt-text {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.05)), url(../image/bright-upd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.abt-text div.abt-wrap {
+    position: absolute;
+    top: 3.5rem;
+    left: 5rem;
+}
+
+.abt-me-head {
+    font-family: 'Gretaros Regular';
+    color: var(--bg-dark);
+    font-size: 4.9rem;
+}
+
+.abt-me-body {
+    color: var(--bg-dark);
+    font-size: 1.9rem;
+    width: 30rem;
+    
+}
+
+/* ----------------------------- Projects ----------------------------- */
+
+.my-projects {
+    height: 167vh;
+    background-image: linear-gradient(rgba(0,0,0,0.04),rgba(0,0,0,0.5)), url(../image/dark-upd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.project-texts {
+    position: absolute;
+    text-align: center;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my-projects .project-texts h1 {
+    font-family: 'Gretaros Regular';
+    color: var(--white);
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    width: 80rem;
+}
+
+.my-projects .project-texts p {
+    color: var(--white);
+    font-size: 1.9rem;
+    width: 80rem;
+}
+
+.my-projects .project-texts p a {
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    top: 28rem;
+    left: -1rem;
+}
+
+.hm-btn {
+    position: absolute;
+    top: 95%;
+    left: 49.5%;
+    transform: translate(-50%, -100%);
+}
+
+.projects {
+    height: 37rem;
+    width: 25%;
+    border-radius: 5%;
+}
+
+.project4, .project5, .project6 {
+    margin-top: 5rem;
+}
+
+.project1 {
+    background-image: url(../image/NP\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project2 {
+    background-image: url(../image/logo\ living\ organic.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project3 {
+    background-image: url(../image/P\ logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project4 {
+    background-image: url(../image/freshers\ festa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project5 {
+    background-image: url(../image/SOTY.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project6 {
+    background-image: url(../image/yaadein.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ----------------------------- Blogs ----------------------------- */
+
+.my-blogs {
+    height: 95vh;
+    margin-top: 3rem;
+    background-image: linear-gradient(rgba(0,0,0,0.06),rgba(0,0,0,0.06)), url(../image/bright-zoom.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.blogs {
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    left: 60rem;
+}
+
+.my-blogs .blogs h1 {
+    font-family: 'Gretaros Regular';
+    color: var(--bg-dark);
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    width: 80rem;
+}
+
+.my-blogs .blogs p {
+    color: var(--bg-dark);
+    font-size: 1.9rem;
+    width: 80rem;
+}
+
+.my-blogs .blogs a {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.my-blogs .blogs a p:hover {
+    color: var(--text-light);
+}
+
+.my-blogs .blogs span::after {
+    content: "";
+    display: block;
+    width: 60rem;
+    border-top: 2px solid var(--bg-dark);
+    margin: 0;
+}
+
+.gear-img {
+    position: absolute;
+    height: 65rem;
+    width: auto;
+    top: 48%;
+    left: 10rem;
+}
+
+/* ----------------------------- Testimonials ----------------------------- */
+
+.testimonials {
+    height: 129vh;
+    background-image: linear-gradient(rgba(0,0,0,0.06),rgba(0,0,0,0.06)), url(../image/bright-zoom.png);
+    margin-top: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.testi-text {
+    position: absolute;
+    left: 49%;
+    transform: translateX(-50%);
+}
+
+.testi-photo {
+    position: absolute;
+    top: 17rem;
+    left: 49%;
+    transform: translateX(-50%);
+}
+
+.head-text {
+    font-family: 'Gretaros Regular';
+    color: var(--bg-dark);
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+    width: 80rem;
+}
+
+.body-text {
+    color: var(--bg-dark);
+    font-size: 1.9rem;
+    width: 80rem;
+}
+
+/* ----------------------------- Footer ----------------------------- */
+
+.footer {
+    height: 12rem;
+    background-image: linear-gradient(rgba(0,0,0,0.04),rgba(0,0,0,0.5)), url(../image/dark-upd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3rem;
+    color: var(--text-light);
+    font-size: 1.8rem;
+}
+
+.footer-elements {
+    padding-top: 1.5rem;
+}
+
+.footer a{
+    color: var(--text-light);
+}
+
+.fa-brands {
+    margin-left: -1.5rem;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head> 
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Minions | Movies | TV | GAMES | BOOKS | MUSIC</title>
+      <link rel="stylesheet" href="app.css">
+      <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+   <body>
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+                <img src="https://fchat.s3.ap-south-1.amazonaws.com/default/VWrFtztmnh.1651114974495.png" height="60px" alt="">
+         </div>
+         <div class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="test.html">Movies</a></li>
+            <li><a href="tv.html">TV Shows</a></li>
+            <li><a href="books.html\">Books</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="games.html">Games</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form id="form">
+            <input type="search" class="search-data" id="search" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+
+      <h1 class="trending">TRENDING MOVIES</h1>
+
+      <main id="main" class="main">
+
+
+      </main>
+
+
+
+
+
+
+<script src="app.js"></script>
+
+      <script>
+
+// const API_KEY = 'https://api.themoviedb.org/3/movie/550?api_key=21958744bdcd83994642863edf06f583';
+
+// const key_aapi = 'api_key=21958744bdcd83994642863edf06f583';
+
+// const IMG_URL = 'https://image.tmdb.org/t/p/original'
+
+// const b_base_url = 'https://api.themoviedb.org/3'
+
+// const BASE_URL ='https://api.themoviedb.org/3/trending/movie/week?api_key=21958744bdcd83994642863edf06f583';
+
+// const BASE_TV = 'https://api.themoviedb.org/3/tv/popular?api_key=21958744bdcd83994642863edf06f583'
+
+// const searchURL = b_base_url + '/search/movie?' + key_aapi;
+
+// const main = document.getElementById('main');
+
+// // const form = document.getElementById('form');
+
+// const search = document.getElementById('search');
+
+// getMovies(BASE_URL);
+
+
+// function getMovies(url){
+//     fetch(url).then(res => res.json()).then(data =>{
+//         console.log(data);
+
+//         showMovies(data.results);
+
+
+//     })
+// }
+
+
+// function showMovies(data){
+
+//     main.innerHTML = '';
+
+//     data.forEach(movie => {
+//         const {title, poster_path ,vote_average, overview} = movie;
+//         const movieEL =document.createElement('div');
+//         movieEL.classList.add('movie');
+//         movieEL.innerHTML = `
+//                  <img src="${IMG_URL+poster_path}" alt="${title}" >
+//                    <div class="movie-info">
+//                        <h3>${title}</h3> 
+//                        <span class="color">${vote_average}</span>
+//                    </div>
+//                    <div class="overview">
+//                    <h3>overview</h3>
+//               ${overview}
+//                </div>`
+
+//                main.appendChild(movieEL);
+//     })}
+
+    
+
+//     form.addEventListener('submit',(e) =>{
+//         e.preventDefault();
+
+//         const searchTerm = search.value;
+
+//         if(searchTerm){
+//             getMovies(searchURL+'&query='+searchTerm)
+//         }
+//     })
+
+
+         const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+      
+   </body>
+</html>
