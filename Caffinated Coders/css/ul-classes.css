@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Bangers&display=swap');
+
+@font-face {
+    font-family: 'Gretaros Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gretaros Regular'), url('../font/Gretaros-Regular.woff') format('woff');
+    /* font-family: 'Gretaros Regular'; */
+}
+
+* {
+    padding: 0;
+    margin: 1.5rem 1rem 1.5rem;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    padding: 0;
+    margin: 1.5rem 1rem 1.5rem;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+}
+
+ul, li{
+   list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------------------------- Color Variable ---------------------------- */
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --text-black: #262626;
+    --text-light: #dec38b;
+    --bg-dark: #214261;
+    --bg-light: #fffdf5;
+}
+
+/* ---------------------------- Container ---------------------------- */
+
+.container {
+    max-width: 1350px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container2{
+    max-width:800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container3{
+    max-width:1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ---------------------------- Flex-box ---------------------------- */
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----------------------------- Animation ----------------------------- */
+
+.gear-img {
+    animation: gear-rotate 20s infinite linear;
+}
+
+@keyframes gear-rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
