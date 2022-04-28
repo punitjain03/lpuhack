@@ -1,0 +1,302 @@
+body {
+    background-color: white;
+    background-image: url(/image/background-1747777.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  header {
+    padding: 5px;
+    background-color: rgb(11, 15, 15);
+    display: flex;
+    margin-top: -10px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    transition: top 0.3s;
+  }
+  /* #headerr{
+    
+  } */
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Fredoka One', cursive;
+  }
+ 
+  .header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+    padding: auto;
+    padding: 5px 5px;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+    padding: auto;
+  padding: 5px 5px ;
+}
+
+  /* .Home{
+    margin: 0 5px;
+    padding: auto;
+    
+  } */
+  
+  .main {
+    display: flex;
+  }
+  .main > img {
+    margin-top: 110px;
+    width: 50%;
+  }
+  
+  .text {
+    font-size: 100%;
+    text-align: left;
+  }
+  
+  .image {
+    vertical-align: right;
+  }
+  
+  .signup {
+        margin-top: 130px;
+    font-family: "Verdana, Arial, sans-serif";
+    margin-bottom: -100px;
+  }
+  
+  .login {
+    width: 500px;
+    overflow: hidden;
+    margin-top: 110px;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background-image: url(/image/cyber-security-3374252.jpg);
+    /* background: #23463f; */
+    border-radius: 15px;
+  }
+  #login{
+      margin-top: -50px;
+      color:yellow;
+  }
+  #us,#ps{
+      text-align: left;
+      margin-top: 50px;
+      margin-left: -50px;
+  }
+  #pss,#uss{
+      text-align:center;
+      margin-top: -50px;
+      margin-left: 100px;
+  }
+  .form{
+    border:black;
+    border-width:5px;
+        border-style:solid;
+    width: 30cm;
+    background-image: url(https://media.istockphoto.com/photos/colorful-background-picture-id1280385511?b=1&k=20&m=1280385511&s=170667a&w=0&h=4-KMkIqgyw2gTBMTBbYZVZoidwRsWZzr3q0xyUDYhas=);
+    width: 500px;
+   margin: auto;
+}
+/* trying of  image hover */
+.backimage .main img{
+  animation:float 3s linear infinite;
+  overflow: hidden;
+ 
+}
+@keyframes float{
+  0%, 100%{
+    transform: translateY(0rem);
+  }
+  50%{
+    transform: translateY(3rem);
+  }
+
+  0%{
+    tranform:translateZ(2rem);
+  }
+}
+/* ending of image hover */
+#t,#y,#k,#l{
+      background-image:url(/image/binary-6944162.jpg);
+      border-radius: 5px;
+      border: 4px solid;
+      border-style:groove;
+  }
+  #content{
+    /* margin-top: 500px;
+    max-width: 60rem; */
+    padding: 15px 15px;
+    /* background-image: url(/image/1.jpg); */
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#content h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+
+#content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#eee;
+}
+  /* #content{
+      background-image: url(/image/1.jpg);
+  } */
+  .heading2 {
+    text-align: center;
+    color: #277582;
+    padding: 20px;
+  }
+  
+  label {
+    color: #08ffd1;
+    font-size: 17px;
+  }
+  
+  #Uname {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+  }
+  
+  #Pass {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+  }
+  
+  #log {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+  }
+  .intro-text {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /* flex-direction: column; */
+  }
+  /* .intro-text--item {
+      display: flex;
+  }
+  .intro-text--item p {
+      flex-basis: 60%;
+      text-align: justify;
+  }
+  .intro-text--item iframe {
+      width: 100%;
+      flex-basis: 50%;
+      margin-left: 10px;
+  } */
+  span {
+    color: white;
+    font-size: 17px;
+  }
+  
+  a {
+    /* float: right; */
+    background-color: white;
+  }
+  #vid1{
+      border-radius:  25%;
+      border-style: hidden;
+  }
+  
+  .courses {
+    background-color: rgb(219, 230, 230);
+  }
+  
+  .row {
+    display: flex;
+    margin-top: 10px;
+       }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    
+  }
+  
+  .my-button {
+    background: rgb(216, 239, 239);
+    border: ;
+    padding: 2px 2px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    text-decoration: none;
+    width: 100px;
+    margin-top: 10px;
+  }
+  
+  .my-button:hover {
+    color: yellow;
+    background-color: black;
+    cursor: pointer;
+  }
+  .anshuman {
+    display: flex;
+    justify-content: space-around;
+  }
+  .course-title1 {
+        font-style: inherit;
+        color: white;
+        font-size: large;
+  }
+  .stopTrackingButton {
+    content: url("chrome-extension://hbklahkfbghjgbclbfcnhpfmajkagnci/icons/stop.png") !important;
+    width: 16px;
+    height: 16px;
+    right: 38px;
+    position: fixed;
+    cursor: pointer;
+  }
+  .stop {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgb(18, 55, 111);
+    padding: 10px;
+    width: 100px;
+  }
+  .logo {
+    display: flex;
+  }
+  .linkedin {
+    flex: 25%;
+    padding: 10px;
+  }
+  
+  .courses .row div img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+  }
+  .courses .row div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .courses .row div a {
+      margin: 10px 0;
+  }
