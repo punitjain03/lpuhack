@@ -1,0 +1,121 @@
+.heading{
+  position: absolute;
+width: 217px;
+height: 60px;
+left: 570px;
+top: 50px;
+
+font-family: 'Courgette';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.chestworkout{
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  height: 400px;
+  width: 600px;
+
+}
+.chest{
+  position: absolute;
+  top: 230px;
+  left: 900px;
+}
+.chest p{
+  font-size: 40px;
+  font-family: 'Courgette';
+}
+.head1{
+  position: absolute;
+  top:170px;
+  left: 100px;
+
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+}
+.head2{
+position: absolute;
+top: 790px;
+left: 900px;
+
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+}
+.legworkout{
+  position: absolute;
+  top: 900px;
+  left: 900px;
+  height: 600px;
+  width: 400px;
+}
+.leg{
+  position: absolute;
+  top: 900px;
+  left: 100px;
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+}
+.absworkout{
+  position: absolute;
+  top: 1500px;
+  left: 100px;
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+}
+.abs{
+  position: absolute;
+  top: 1600px;
+  left: 100px;
+  height: 600px;
+  width: 600px;
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+}
+.abs-work{
+  position: absolute;
+  top: 1630px;
+  left: 900px;
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+}
+.copyright{
+  position: absolute;
+  top: 2200px;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+.copyright-text{
+  position: absolute;
+  top: 30px;
+  left: 550px;
+  font-family: 'Courgette';
+
+  color: #fff;
+
+}

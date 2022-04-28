@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <link rel="icon" href="Profile.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Webuilder</title>
+  </head>
+  <style>
+
+  </style>
+  <body >
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+<!-- Making navbar for the website -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Webuilder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="hackthon/About.html" >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Skills</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Startup</a></li>
+              <li><a class="dropdown-item" href="#">Advertisement</a></li>
+              <li><a class="dropdown-item" href="#">Collaboration</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">SpaceX</a></li>
+              <li><a class="dropdown-item" href="#">Tesla</a></li>
+              <li><a class="dropdown-item" href="#">Solar City</a></li>
+              <li><a class="dropdown-item" href="#">Twitter</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hackthon/contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <!-- <button type="button" class="btn btn-outline-dark position-relative rounded-pill "  style="margin-right: 10px; ">
+            <a href="https://getbootstrap.com/docs/5.1/components/badge/"> <h7 style="color: black "> Profile</h7> </a>
+            
+              
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button> -->
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+            <button class="btn btn-outline-success me-md-2 rounded-pill" type="button">
+                    <a href="" style="color: aliceblue; text-decoration: none;"> Profile </a>
+            </button>
+            
+          </div>
+          
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2300">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner " >
+        
+      <div class="carousel-item active">
+        <img src="123.jpg" class="d-block w-100" alt="..." height="660">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Techverse</h5>
+          <p>Life is too short for long-term grudges</p>
+          <button class="btn btn-primary" style="margin-right: 10px !important;" >Perceive</button>
+          <button class="btn btn-danger">Innovate</button>
+          <button class="btn btn-success" style="margin-left: 10px !important;">Inspire</button>
+        </div>
+    </div>
+      <div class="carousel-item">
+        <img src="tesla-ceo-elon-musk.jpg" class="d-block w-100" alt="..." height="660">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to Techverse</h5>
+            <p>Life is too short for long-term grudges</p>
+            <button class="btn btn-primary" style="margin-right: 10px !important;">Perceive</button>
+            <button class="btn btn-danger">Innovate</button>
+            <button class="btn btn-success" style="margin-left: 10px !important;">Inspire</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="4321.png" class="d-block w-100" alt="..." height="660">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to Techverse</h5>
+            <p>Life is too short for long-term grudges</p>
+            <button class="btn btn-primary " style="margin-right: 10px !important;">Perceive</button>
+            <button class="btn btn-danger " data-aos="fade-up">Innovate</button>
+            <button class="btn btn-success" style="margin-left: 10px !important;">Inspire</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom "  style="text-align: center;">Our Services</h2>
+    
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        
+      <div class="col" data-aos="fade-right">
+        
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('SpaceX123.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-1 mt-1 mb-4 display-6 lh-1 fw-bold ">SpaceX</h4>
+            <p style="color: black;">SpaceX designs, manufactures and launches advanced rockets and spacecraft.
+                The company was founded in 2002 to revolutionize space technology,
+                 with the ultimate goal of enabling people to live in the space.</p>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="Profile.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small style="color: black;"></small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small></small>
+              </li>
+            </ul>
+        </div>
+        </div>
+      
+    </div>
+      <div class="col " data-aos="fade-up">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('98765.jpg');">
+          <div class="d-flex flex-column h-100 p-8 pb-3 text-black text-shadow-4 hover-zoom">
+            <h4 class="pt-2 ml-6 py-2 display-6 lh-4 fw-bold" style="margin-left: 3px;">Tesla</h4>
+            <!-- <p style="color: black;">Tesla is accelerating the world's transition to sustainable energy with electric cars,
+                 solar and integrated renewable energy solutions for homes and businesses. </p> -->
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="Profile.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small></small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" data-aos="fade-left">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('Solar333.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h4 class="pt-1 mt-1 mb-4 display-6 lh-1 fw-bold">Solar City</h4>
+            <p style="color: black;">SolarCity was founded in 2006 by brothers Peter and Lyndon Rive,
+                 based on a suggestion for a solar company concept by their cousin, 
+                 Elon Musk, who was the chairman and helped start the company </p>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="Profile.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                <small style="color: aqua;"></small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                <small></small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="pb-2 border-bottom "  style="text-align: center;">Interesting Facts</h2>
+  <div class="container btn-dark">
+  <hr class="featurette-divider ">
+
+  <div class="row featurette" style="margin: 2px;" data-aos="fade-left">
+    <div class="col-md-7">
+      <h1 class="featurette-heading">How Elon Musk saved Tesla from bankruptcy ?</h1> <br>
+      <p class="lead" style="font-size: 22px;">The company’s investors were sweating a lot because Tesla was finding
+           it hard to sell the vehicle for the cheap price of $35,000, and make an agreeable
+            profit that justified all the trouble. In order to save the company from going 
+            bankrupt Musk had to make a difficult choice that invited the wrath of quite a 
+            number of his investors. In order to save Tesla, he decided to shift resources
+             from the solar company which he acquired three years ago.</p>
+    </div>
+    <div class="col-md-5">
+        <img src="Elon22.jpg" alt="">
+
+    </div>
+  </div>
+
+  <hr class="featurette-divider btn-dark" >
+
+  <div class="row featurette" style="margin: 2px;" data-aos="fade-right">
+    <div class="col-md-7 order-md-2">
+      <h1 class="featurette-heading">Why is Elon Musk buying Twitter ?</h1> <br>
+      <p class="lead" style="font-size: 22px;">Billionaire Elon Musk, who heads electric car company Tesla,
+           aerospace manufacturer SpaceX and The Boring Company, said in a recent
+            TED Talk after announcing his bid to buy the microblogging site which
+             has more than 200 million users globally: “My strong intuitive sense
+              is that having a public platform that is maximally trusted and broadly
+               inclusive is extremely important to the future of civilisation.” </p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="https://unsplash.com/photos/dLn6nUY-5zg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect></svg> -->
+       <img src="Elon12.jpg" alt="">
+    </div>
+  </div>
+
+  <hr class="featurette-divider btn-dark">
+</div>
+          <div class="b-example-divider"></div>
+          <div class="container">
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-2">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-2">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-2">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+          
+                <div class="col-4 offset-1">
+                  <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of whats new and exciting from us.</p>
+                    <div class="d-flex w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <p>© 2021 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-danger" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg></a></li>
+                  <li class="ms-3"><a class="link-danger" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg></a></li>
+                  <li class="ms-3"><a class="link-danger" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg></a></li>
+                  <li class="ms-3"><a class="link-danger" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg></a></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+          <div class="b-example-divider"></div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 2400,
+        easing: 'ease',
+        offset: 120
+    });
+  </script>
+  <!-- <Script>
+  var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 200,
+  duration:200,
+  wrap: true,
+})
+  </Script> -->
+  </body>
+</html>
