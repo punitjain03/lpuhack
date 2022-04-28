@@ -5,7 +5,7 @@
 
 #include "credentials.h"
 // set hosts and ports
-const char* server = "http://" + HOST_IP + ":" + 5000 + "/nodemcu";
+const char* server = "http://192.168.226.193:5000/nodemcu";
 
 // credentials
 String wifi_ssid = WIFI_SSID;
@@ -14,7 +14,7 @@ String wifi_password = WIFI_PASSWORD;
 const int moisture_pin = A0;
 
 unsigned long lastTime = 0;
-unsigned long delayTime = 5000;  // 5s
+unsigned long delayTime = 5000;  // 1s
 
 WiFiClient client;
 HTTPClient http;
@@ -49,28 +49,6 @@ void loop() {
     float moisture = getMoistureLevel();
     // Serial.println(moisture);
 
-    // rice moisture data
-    int rice_min = 70;
-    int rice_max = 90;
-
-    // wheat moisture data
-    int wheat_min = 50;
-    int wheat_max = 70;
-
-    // tomato moisture data
-    int tomato_min = 30;
-    int tomato_max = 40;
-
-    // an example with rice
-
-    if (moisture <= rice_min) {
-        Serial.println("Put water in the field.");
-    } else if (moisture >= rice_max) {
-        Serial.println("Water is too much.");
-    } else {
-        Serial.println("Water is ok.");
-    }
-
     // send data to server
     if ((millis() - lastTime) > delayTime) {
         if (WiFi.status() == WL_CONNECTED) {
@@ -94,6 +72,13 @@ void loop() {
             Serial.println("WiFi not connected");
 
             ESP.reset();
+
+            // WiFi.begin(wifi_ssid, wifi_password);
+            // Serial.println("Connecting to WiFi");
+            // while (WiFi.status() != WL_CONNECTED) {
+            //     delay(500);
+            //     Serial.print(".");
+            // }
         }
 
         lastTime = millis();
