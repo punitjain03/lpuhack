@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RAY Portfolio|Showcase your talent</title>
+	<header><img class="img" src="ray.jpeg"alt="Logo" style="width: 300px; height: 300px;">
+	<center><h1 style="font-size: 600%" class="h">RAY  &nbsp; PORTFOLIO</h1></center>
+	<center><h3 style="font-size: 200%" class="h">SHOWCASE YOUR TALENT</h3></center>
+	<a href="register.html"><button id="button"onclick="randomcolor()" class="button1">Register</button></a>
+
+	<style>
+		.h{
+	float: middle;
+	color: sandybrown;
+}
+.img{
+	float: left;
+
+	}
+*:focus {
+  outline: none;
+}
+
+header {
+  background-color: #666;
+  padding: 60px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+button {
+	border-radius: 12px;
+  background-color: black;
+  border: none;
+  color: sandybrown;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.button1 {
+	border-radius: 12px;
+  background-color: black;
+  border: none;
+  color: sandybrown;
+  padding: 15px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-down:70px;
+  	float: right;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#butt {
+  display: none;
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: black; 
+  color: sandybrown; 
+  cursor: pointer; 
+  padding: 15px;
+    border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#butt:hover {
+  background-color: #555; 
+}
+p{
+	text-shadow: 5px 5px #000;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;  
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+	</style>
+
+</head>
+<body style="background-color: gainsboro;">
+</header>
+
+  	<br>
+  	<br>
+  	<br>
+  	<a href="prime.html"><button id="button"onclick="randomcolor()" class="button">HOME</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="create.html"><button id="button" onclick="randomColor()" class="button">CREATE</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="explore.html"><button id="button"onclick="randomcolor()" class="button">EXPLORE</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="profile.html"><button id="button"onclick="randomcolor()" class="button">MY PROFILE</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="about.html"><button id="button"onclick="randomcolor()" class="button">ABOUT </button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="contact.html"><button id="button"onclick="randomcolor()" class="button">CONTACT US </button></a>
+    <br>
+    <br>
+    <marquee behaviour="scroll" direction="left">
+	<img class="img" src="https://upload.wikimedia.org/wikipedia/en/3/3a/Lovely_Professional_University_logo.png" width="20px" height="20px"><h2 style="font-size:100%">THIS IS AN DEMO WEBSITE CREATED FOR THE GREAT INDIAN HACKATHON IN LOVELY PROFESSIONAL UNIVERSITY BY GURUNIVAS AND ARUL MURUGAN</h2>
+</marquee>
+    <button onclick="topFunction()" id="butt" title="Go to top">Top</button>
+    <p style="font-size: 500%; color: sandybrown;">MAKE EVERY THING BETTER</p>
+<script>
+  mybutton = document.getElementById("butt");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
