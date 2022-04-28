@@ -1,0 +1,78 @@
+.border-2 {
+    border: 1px solid black;
+}
+.border-2:hover {
+    box-shadow: 10px 10px 5px rgb(22, 79, 98);
+}
+hr {
+    color: rgb(26, 13, 13);
+    border: 1px solid black;
+}
+.ml-3 {
+    font-size: xx-large;
+}
+.mt-3,.items-center:hover{
+    cursor: pointer;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgb(228, 217, 93);
+  }
+  
+
+  /* .mr-5 hover:text-gray-900 {
+      font-size: 20px;
+      color: antiquewhite;
+  }
+
+  .text-gray-600 body-font {
+      color: black;
+  }
+
+  .container px-5 py-24 mx-auto flex flex-wrap {
+      background-color: aqua;
+  } */
+
+  #contactform {
+      background-color: rgba(231, 175, 151, 0.123);
+  }
+
+  #handshakeform{
+      background-color: rgb(240, 236, 187);
+  }
+
+  #jobform1{
+      background-color: rgb(222, 240, 239);
+  }
+
+  #jobform2{
+      background-color: rgba(230, 208, 217, 0.217);
+  }
+
+  #first{
+    color: rgb(18, 120, 209);
+}
+
+#second{
+  color: rgb(18, 120, 209);
+}
+#third{
+    color: rgb(18, 120, 209);;
+}
+
+  #forth{
+      color: rgb(18, 120, 209);
+  }
+
+  #sixth{
+    color: rgb(18, 120, 209);
+  }
+  #fifth{
+      color: rgb(18, 120, 209);;
+  }
+
+  #footer1{
+      color: rgb(192, 141, 76);
+  }
