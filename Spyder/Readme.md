@@ -1,1 +1,5 @@
-#Coder's Club
+# Coder's Club
+## Our main aim to create such a website in which we can all the best content of the world, in such a manner that we know we have a large number of resources in our internet but did not have a right pathway to follow them so we need to build a pathway in which the students before getting into the CS background that they came to know that how the computer science is all about how this field works and how they how to install the compilers and what are the courses what is the syllabus and what us the right practice problems we need to work upon according to our level and how we need to get through it after sometime in this term because of a short period of time we will the website in this form that why adding the content but in the coming future we will add it with different resources which students will be updated with following by our content also the main aim to build this website was to build a Gateway path for all the Computer Science Students so that they should not pursue their degree as a degree but they should pursue their degree as a passion which they have opted for in their starting with the use to lose after the first second or third year and it will help them make their life sustainable and easy...
+
+
+## Website link, [click here](https://icy-cliff-08a1f3a10.1.azurestaticapps.net/)
