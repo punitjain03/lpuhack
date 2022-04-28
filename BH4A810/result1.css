@@ -1,0 +1,45 @@
+
+*{
+    background-color: #ededed;
+}
+p{
+    font-size: 3rem;
+    margin: 2rem 6rem;
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+.hello{
+    font-size: 7rem;
+
+}
+.name{
+    text-decoration: underline;
+}
+.reg-no{
+    font-weight: bold;
+}
+.nav button{
+    border: none;
+    position: relative;
+    top: -2rem;
+    /* width: 5rem; */
+    /* height: 3rem; */
+    /* margin-top: .1rem; */
+    /* margin-bottom: 2rem; */
+    margin-left: 61rem;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    background-color: #73568d;
+    border-radius: 5px;
+    box-shadow: 1px 3px 8px;
+}
+.nav button a{
+    text-decoration: none;
+    color: white;
+    background: none;    
+}
+.nav img{
+  /* border: 2px solid red; */
+  height: 5rem;
+  margin-left: 3rem;
+}
