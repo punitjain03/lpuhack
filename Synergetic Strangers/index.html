@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synergetic Strangers</title>
+</head>
+<body>
+    <!-- FRONT PAGE UP BEGINS -->
+    <div class="complete-container">
+    <header>
+        <a href="#" class="logo">The Synergetic Strangers</a>
+        <ul>
+             
+            <li><a href="#aboutus">Subscribe To Our Newsletter</li></a>
+
+            
+        </ul>
+
+    </header>
+    <section class="home">
+        <img class="home-img" id="home-img" src="images/background.png">
+        <img class="home-c1" id="home-c1" src="images/CIRCLE1.png">
+        <img class="home-c2" id="home-c2" src="images/circle2.png">
+        <img class="home-c3" id="home-c3" src="images/circle3.png">
+        <img class="home-c4" id="home-c4" src="images/circle4.png">
+        <img class="home-c5" id="home-c5" src="images/circle2.png">
+
+        <div class="rishi-img rishi-dp">
+            <div class="dp-info">
+                <h3><button class="open-popup" onclick="openPopup(this.id)" id="rishi">Rishi Bhalla</button></h3>
+            </div>
+        </div>
+
+        <div class="vedant-img vedant-dp">
+            <div class="dp-info">
+                <h3><button class="open-popup" onclick="openPopup(this.id)" id="vedant">Vedant Gaidhane</button></h3>
+            </div>
+        </div>
+            
+    
+        <div class="gurjot-img gurjot-dp">
+            <div class="dp-info">
+                <h3><button class="open-popup" onclick="openPopup(this.id)" id="gurjot">Gurjot Singh</button></h3>
+            </div>
+        </div>
+        
+        <div class="container-1" id="popup">
+            <button class="close-btn" onclick="closePopup()">&times;</button>
+            <img src="/images/box.png" alt="" class="popup-idcard">
+            <img src="/images/gurjot1.JPG" alt="" class="popup-dp" id="dp-img">
+            <a href="https://www.instagram.com/singhhgurjot/"><img src="/images/insta.png" alt="" class="popup-insta" id="insta"></a>
+            <a href="https://www.linkedin.com/in/gurjot-singh-ba1396222/"><img src="/images/linkedin.png" alt="" class="popup-linked" id="linkedin"></a>
+            <a href="https://github.com/Synergetic-Strangers"><img src="/images/github.png" alt="" class="popup-github"></a>
+            <h2 id="name">Name</h2>
+        </div>
+
+        <img class="home-snrg" id="home-snrg" src="images/synergy.png">
+
+
+        <div class="content">
+            <p class="heading"><b>THE SYNERGETIC STRANGERS?</b></p>
+
+            <p class="para">Yes exactly, we are just three strangers with similar vibes<br> who met 
+            and created this world of fun projects and <br> remarkable milestones.<br>
+            </p>
+        </div>
+
+
+    </section>
+
+
+    
+
+<!-- FRONT PAGE UP ENDS -->    
+ 
+<!-- ABOUT US SECTION BEGINS -->
+<section class="aboutus" id="aboutus">
+    <div class="aboutus-main">
+        <img class="contact-us" id="contact-us" src="images/lookingforapartner.png">     
+        
+        <!-- card section starts here -->
+
+        <div class="container">       
+
+            <div class="card">
+                <div class="card-image">	
+                    
+                </div>
+                <form class="card-form">
+                    <div class="input">
+                        <input type="text" id="name" class="input-field" value="YOUR NAME" required/>
+                        <label class="input-label">Full name</label>
+                    </div>
+                                <div class="input">
+                        <input type="text" id="email" class="input-field" value="ABC@gmail.com" required/>
+                        <label class="input-label">Email</label>
+                    </div>
+                    <div class="action">
+                        <button class="action-button" type="button" onclick="sendEmail()" value="send an email">Subscribe</button>
+                    </div>
+                </form>
+                <div class="card-info">
+                    <p>By signing up you are agreeing to our <a href="#">Terms and Conditions</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- card section ends here -->
+        
+    </div>
+    
+</section>
+<script src="script.js"></script>
+
+
+    
+</body>
+</html> 
