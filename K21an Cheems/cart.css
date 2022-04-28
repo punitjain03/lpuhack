@@ -1,0 +1,162 @@
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+i {
+	margin-right: 10px;
+}
+
+/*------------------------*/
+input:focus,
+button:focus,
+.form-control:focus{
+	outline: none;
+	box-shadow: none;
+}
+.form-control:disabled, .form-control[readonly]{
+	background-color: #fff;
+}
+/*---------------------------*/
+
+
+
+
+/*-------------cart-calcuation-second--------------*/
+.step-section-container {
+    padding: 40px 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+.step-main-heading-box h4{
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #484848;
+    font-size: 28px;
+    position: relative;
+}
+.step-main-heading-box h4:before{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 4px;
+    border-radius: 3px;
+    bottom: -30px;
+    transform: translate(-50%, -50%);
+}
+.travel-container {
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-container .form-control{
+    max-width: 80px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 5px;
+}
+.cart-qty-plus,
+.cart-qty-minus{
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.cart-qty-plus:hover,
+.cart-qty-minus:hover{
+    background-color: #0072bc;
+    border-color: #0072bc;
+    color: #fff;
+}
+.traveller-desc p{
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.travel-container{
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+.amount {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+}
+.traveller-total-amount {
+    text-align: center;
+    padding-top: 40px;
+}
+.travel-form-detail .row:last-child .col-md-12  .step-section-container{
+    border-bottom: none;
+}
+.traveller-total-amount div span {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0072bc;
+}
+.traveller-total-amount span.currency-text {
+    font-size: 16px;
+}
+.promo-container{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 767px){
+    /*----cart-calculation-second----------*/
+    .travel-form-detail .datepicker table tr td, .travel-form-detail .datepicker table tr th{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .traveller-desc p{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .traveller-info .travel-part-amount{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .amount{
+        font-size: 24px;
+    }
+    .promo-submit{
+        margin-top: 15px;
+        text-align: center;
+    }
+} */

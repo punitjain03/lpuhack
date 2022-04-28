@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Font Awesome 6 Free";
+}
+/*   -----------------------------------------------CALENDAR page---------------------------------------------- */
+.events-cal {
+  background:linear-gradient(rgba(181, 90, 10, 0.7), rgba(232, 114, 11, 0.7)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDK0MowCUARJTNbCHKdKqwqERY4fhoHrJBCg&usqp=CAU");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+}
+
+.events-cal>h1 {
+  padding: 100px;
+  font-size: 80px;
+  margin: 0;
+  text-align: center;
+  font-weight: 800;
+  color: #ffff;
+  padding-top: 195px;
+  padding-bottom: 150px;
+  letter-spacing: 5vw;
+
+}
+
+/* .recommended h1{
+  position: absolute;
+} */
+.top{
+  display: flex;
+}
+/* .top .suggestion{
+  margin-right: 0;
+} */
+.main-bf {
+  margin: 0;
+  padding: 3% 0;
+  background: linear-gradient(23deg,black,maroon);
+}
+          /* .top .suggestion p, .top .suggestion i{
+            margin-top:30px;
+          } */
+.suggestion p,.suggestion i{
+  color: #ffff;
+  animation:flash 0.6s infinite;
+}
+@keyframes flash {
+  0%{
+    color: yellow;
+    opacity: 1;
+  }
+  50%{
+    color: green;
+      opacity: 0;
+  }
+  70%{
+    color: green;
+  }
+  100%{
+    color: yellow;
+       opacity: 1;
+  }
+  /* 75%{
+    color: white;
+
+  }
+  100%{
+    color:red;
+    opacity: 1;
+  } */
+
+
+}
+.item {
+  margin: 2% 5%;
+}
+.normal .item-1{
+  margin-left: 0;
+}
+.no-hover p {
+  font-weight: 700;
+  color: #2A2550;
+  margin: 6px 0;
+  font-size: 10px;
+}
+
+.recommended {
+  margin-top: 0;
+  display: flex;
+  background: linear-gradient(to right, rgba(233, 239, 192, 0.2), rgb(68 185 69)), url("photos/breakfast-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.normal {
+  display: flex;
+  background: linear-gradient(to right, rgba(252, 255, 231, 0.2), rgb(205 203 34 / 1)), url("photos/breakfast-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  margin-left: 0;
+   margin-top: 0;
+}
+.cheat-day .item-1,.normal .item-1,.recommended .item-1{
+  margin-left: 0;
+}
+.cheat-day {
+  display: flex;
+  background: linear-gradient(to right, rgba(252, 255, 231, 0.2), rgb(148 41 50)), url("photos/breakfast-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+
+.choice-list {
+  margin: 5% 10%;
+  border-radius: 10px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.no-hover i {
+  color: #AB46D2;
+}
+
+.no-hover {
+  position: relative;
+  left: 62%;
+  /* opacity: 1; */
+}
+
+.no-hover:hover {
+  opacity: 0;
+}
+
+.container {
+  position: relative;
+  width: 330px;
+  height: 130px;
+  background: url("https://images.unsplash.com/photo-1581873372796-635b67ca2008?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fHBpenphfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60") center/cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.layer-one, .layer-two {
+  position: absolute;
+  height: 100%;
+  background: #fff;
+  transition: .5s ease;
+}
+
+.layer-one {
+  width: 70px;
+  clip-path: polygon(0 0, 100% 0, 25% 100%, 0 100%);
+  transform: translateX(-100px);
+}
+
+.layer-two {
+  top: 0;
+  right: 0;
+  width: 240px;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  transform: translateX(250px);
+}
+
+input {
+  display: none;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+input:checked+label {
+  color: #fec331;
+}
+
+.text {
+  position: relative;
+  margin-left: 3rem;
+  padding: .2rem;
+  height: 130px;
+  font-family: 'Alata', sans-serif;
+}
+
+.detail {
+  margin: 5px 0;
+  display: flex;
+  font-size: .7rem;
+  color: #26242e;
+}
+
+.detail p {
+  margin-right: .9rem;
+}
+
+.fa-clock {
+  color: #3ac5f0;
+}
+
+.fa-star {
+  color: #fec331;
+}
+
+.fa-fire {
+  color: #fe2d38;
+}
+
+.text button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 7px 25px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #fe2d38;
+  box-shadow: 0 2px 4px rgba(254, 45, 56, .7);
+  border-radius: 2px;
+  font-family: 'Alata', sans-serif;
+}
+
+#price {
+  position: absolute;
+  bottom: 15px;
+  left: 4px;
+}
+
+.container:hover .layer-one {
+  transform: translateX(0);
+  z-index: 10;
+}
+
+.container:hover .layer-two {
+  transform: translateX(0);
+  z-index: 10;
+}
+
+                                   /* updating content */
+
+.recommended .item-1{
+  background: url("https://www.pngitem.com/pimgs/m/527-5275012_image-dry-fruits-png-hd-transparent-png.png"),white;
+  background-size:cover;
+  background-size: 200px;
+  background-position: left;
+  background-repeat: no-repeat;
+
+}
+.recommended .item-2{
+  background: url("https://c8.alamy.com/comp/2GGFCW5/close-up-of-crunchy-moong-dal-in-a-black-ceramic-bowl-made-with-roasted-mung-bean-indian-spicy-snacks-namkeen-top-view-2GGFCW5.jpg"),white;
+  background-size:cover;
+  background-size: 180px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.recommended .item-3{
+  background: url("https://thumbs.dreamstime.com/b/close-up-organic-makhane-puffed-lotus-seed-fox-nuts-white-ceramic-bowl-over-background-225933935.jpg"),white;
+  background-size:contain;
+  background-size: 180px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.normal .item-1{
+  background: url("https://png.pngitem.com/pimgs/s/626-6262288_quest-protein-bar-quest-bar-protein-hd-png.png"),white;
+  background-size:cover;
+  background-size: 200px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.normal .item-2{
+  background: url("https://wallpapercave.com/wp/wp3145239.jpg"),white;
+  background-size:cover;
+  background-size: 180px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.normal .item-3{
+  background: url("https://www.pngitem.com/pimgs/m/142-1425195_bakery-pita-bread-loaf-clip-art-hd-png.png"),white;
+  background-size:cover;
+  background-size: 140px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.cheat-day .item-1{
+  background: url("https://png.pngitem.com/pimgs/s/301-3013399_tortilla-transparent-background-hd-png-download.png"),white;
+  background-size:cover;
+  background-size: 180px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.cheat-day .item-2{
+  background: url("https://www.pngitem.com/pimgs/m/218-2187900_idli-images-hd-png-transparent-png.png"),white;
+  background-size:cover;
+  background-size: 180px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+
+.cheat-day .item-3{
+  background: url("http://1.bp.blogspot.com/-U1XuF4PB2cs/VX3weGoM8gI/AAAAAAAALX4/Hd5MyIj1eOk/s1600/IMG_0746.JPG"),white;
+  background-size:cover;
+  background-size: 180px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.copyright{
+  position: absolute;
+  top: 1150px;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+.copyright-text{
+  position: absolute;
+  top: 30px;
+  left: 550px;
+  font-family: 'Courgette';
+
+  color: #fff;
+
+}
